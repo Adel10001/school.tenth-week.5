@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> اختبار قصير في بطاقة الأسبوع العاشر</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+        .quiz-container {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .options {
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .submit-btn {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 60px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: auto;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .correct p {
+            color: green;
+        }
+        .incorrect p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1> اختبار قصير في بطاقة الأسبوع العاشر</h1>
+
+        <!-- السؤال الأول -->
+        <div class="question" id="q1-container">
+            <p>1.  ما هي الطبقتان الرئيسيتان اللتان يتكون منهما الجلد؟</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="c">  الأدمة والعضلات .</label>
+                <label><input type="radio" name="q1" value="b">  البشرة والأدمة .</label>
+               	<label><input type="radio" name="q1" value="a">   الأوعية الدموية والبشرة .</label>			
+							
+            </div>
+        </div>
+
+        <!-- السؤال الثاني -->
+        <div class="question" id="q2-container">
+            <p>2. ما هي وظيفة صبغة الميلانين في البشرة الداخلية؟</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a">  إعطاء الجلد رائحة مميزة .</label>
+                <label><input type="radio" name="q2" value="b"> حماية الجلد من أشعة الشمس .</label>
+                <label><input type="radio" name="q2" value="c">   إنتاج العرق .</label>
+            </div>
+        </div>
+
+        <!-- السؤال الثالث -->
+        <div class="question" id="q3-container">
+            <p>3.  أي من الوظائف التالية لا تعد من وظائف الجلد؟</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> الإحساس.</label>
+                <label><input type="radio" name="q3" value="b"> تنظيم درجة الحرارة .</label>
+                <label><input type="radio" name="q3" value="c"> ضخ الدم.</label>
+            </div>
+        </div>
+
+        <!-- السؤال الرابع -->
+        <div class="question" id="q4-container">
+            <p>4. أي نوع من العضلات يعمل بشكل لا إرادي دون الحاجة إلى التفكير فيه؟</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a">  عضلات الذراع  .</label>
+                <label><input type="radio" name="q4" value="b"> عضلات الوجه .</label>
+                <label><input type="radio" name="q4" value="c">  العضلات القلبية .</label>
+            </div>
+        </div>
+
+        <!-- السؤال الخامس -->
+        <div class="question" id="q5-container">
+            <p>5. لاحظت سارة أن شخصًا يعمل في الشمس لفترات طويلة دون ارتداء واقٍ للشمس، وبعد فترة أصبح لون بشرته أغمق. لماذا حدث ذلك؟</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> لأن البشرة فقدت طبقتها السطحية .</label>
+                <label><input type="radio" name="q5" value="b">   لأن الغدد العرقية أغلقت المسام .</label>
+                <label><input type="radio" name="q5" value="c">  لأن الجلد بدأ في إنتاج المزيد من صبغة الميلانين لحماية الجسم من أشعة الشمس .</label>
+            </div>
+        </div>
+		<!-- السؤال السادس -->
+        <div class="question" id="q6-container">
+            <p>6.  جلس خالد في غرفة باردة، فشعر بقشعريرة في جلده. ما السبب العلمي لهذه الظاهرة؟ </p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="b"> انقباض العضلات القلبية لتدفئة الجسم .</label>
+				<label><input type="radio" name="q6" value="a">  انقباض بصيلات الشعر لجعل الجسم يحتفظ بالحرارة .</label>
+                <label><input type="radio" name="q6" value="c">   خروج العرق للحفاظ على حرارة الجسم .</label>
+            </div>
+        </div>
+		
+				<!-- السؤال السابع -->
+        <div class="question" id="q7-container">
+            <p>7. تعرّض شخص لإصابة في ساقه جعلته غير قادر على تحريكها لفترة طويلة. بعد شفائه، لاحظ أن عضلاته أصبحت أضعف مما كانت عليه. ما السبب؟ </p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="b">  لأن العضلات لم تُستخدم لفترة طويلة مما أدى إلى ضعفها .</label>
+				<label><input type="radio" name="q7" value="a">  لأن العضلات فقدت القدرة على إنتاج الطاقة .</label>
+                <label><input type="radio" name="q7" value="c">   لأن العضلات أصبحت غير قادرة على امتصاص الغذاء .</label>
+            </div>
+        </div>
+
+				<!-- السؤال الثامن -->
+        <div class="question" id="q8-container">
+            <p>8. ذهبت ليلى مع أسرتها إلى مزرعة، وبينما كانت تقطف الأزهار، وخزها شوك نبتة في إصبعها. شعرت بألم شديد وسحبت يدها بسرعة.
+
+السؤال: أي جزء من الجلد ساعد ليلى على الإحساس بوخزة الشوك؟ </p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="b"> البشرة السطحية .</label>
+				<label><input type="radio" name="q8" value="a">  الغدد العرقية .</label>
+                <label><input type="radio" name="q8" value="c"> الأدمة التي تحتوي على النهايات العصبية  .</label>
+            </div>
+        </div>
+        <button class="submit-btn" onclick="calculateResult()">إرسال الإجابات</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateResult() {
+            const answers = {
+                q1: 'b',
+                q2: 'b',
+                q3: 'c',
+                q4: 'c',
+                q5: 'c',
+				q6: 'a',
+				q7: 'b',
+				q8: 'c',
+            };
+
+            let score = 0;
+
+            for (let question in answers) {
+                const container = document.getElementById(`${question}-container`);
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+
+                if (userAnswer) {
+                    if (userAnswer.value === answers[question]) {
+                        score++;
+                        container.classList.add('correct');
+                        container.classList.remove('incorrect');
+                    } else {
+                        container.classList.add('incorrect');
+                        container.classList.remove('correct');
+                    }
+                } else {
+                    container.classList.remove('correct');
+                    container.classList.add('incorrect');
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = `لقد أجبت على : ${score} من 8 أسئلة`;
+        }
+    </script>
+</body>
+</html>
